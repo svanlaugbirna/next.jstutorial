@@ -1,3 +1,4 @@
+'use client'
 import { CustomerField } from '@/app/lib/definitions';
 import Link from 'next/link';
 import {
@@ -10,7 +11,7 @@ import { Button } from '@/app/ui/button';
 import { useFormState } from 'react-dom';
 import { createInvoice } from '@/app/lib/actions';
 
-'use client';
+
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = { message: null, errors: {} };
